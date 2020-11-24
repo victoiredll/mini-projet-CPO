@@ -1,7 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* MINI-PROJET : SPEED-CLICK
+ * Victoire LADREIT DE LACHARRIERE - Margot LENORMAND
+ * deb édition : 24/11/20
+ * V1
  */
 package mini_projet_cpo;
 
