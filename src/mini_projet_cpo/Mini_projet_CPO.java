@@ -16,6 +16,10 @@ public class Mini_projet_CPO {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //classe joueur
+        // classe grille
+        //class partie
+        //class bouton ?
     }
     
 }
