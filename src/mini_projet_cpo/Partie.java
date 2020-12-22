@@ -14,7 +14,7 @@ public class Partie {
     //creation des attributs 
     
     Joueur Joueur_Actuel; 
-    GrilleDeJeu Grille_Actuelle;
+    GrilleDeJeu Grille_Actuelle; 
     String Niveau; 
     
     public void Initialiser_Partie() {
@@ -30,7 +30,7 @@ public class Partie {
         String Choix_Niveau = sc2.nextLine( );
         Niveau= Choix_Niveau; 
         
-    
+      
 }
     
 }

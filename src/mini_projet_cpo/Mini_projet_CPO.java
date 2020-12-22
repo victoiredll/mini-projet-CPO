@@ -22,8 +22,8 @@ public class Mini_projet_CPO {
         //class bouton
         
         // test du pseudo 
-        //Partie unePartie = new Partie();
-        //unePartie.Initialiser_Partie(); 
+        Partie unePartie = new Partie(); 
+        unePartie.Initialiser_Partie(); 
         
     }
     
