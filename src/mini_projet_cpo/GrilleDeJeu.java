@@ -12,7 +12,7 @@ package mini_projet_cpo;
 public class GrilleDeJeu {
     //creation des attributs
     int Taille; 
-    
+    Cellule[][] Grille_Actuelle = new Cellule[5][5]; 
     
     //creation du constructeur 
     public GrilleDeJeu (int taille){
