@@ -19,7 +19,7 @@ public class Mini_projet_CPO {
         //classe joueur
         // classe grille
         //class partie
-        //class bouton ?
+        //class bouton
     }
     
 }
