@@ -10,5 +10,13 @@ package mini_projet_cpo;
  * @author margo
  */
 public class GrilleDeJeu {
+    //creation des attributs
+    int Taille; 
     
+    //creation du constructeur 
+    public GrilleDeJeu (int taille){
+        Taille=taille; 
+    }
+    
+    //creation des methodes 
 }

@@ -20,6 +20,10 @@ public class Mini_projet_CPO {
         // classe grille
         //class partie
         //class bouton
+        
+        // test du pseudo Partie unePartie = new Partie();
+        //unePartie.Initialiser_Partie(); 
+        
     }
     
 }
