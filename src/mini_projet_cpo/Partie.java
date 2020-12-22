@@ -15,12 +15,21 @@ public class Partie {
     
     Joueur Joueur_Actuel; 
     GrilleDeJeu Grille_Actuelle;
+    String Niveau; 
     
     public void Initialiser_Partie() {
         //il faudra vider la grille avant de commencer une nouvelle partie 
         Scanner sc= new Scanner(System.in); 
         System.out.println("Choix du pseudo du joueur: ");
-        Joueur Joueur_Actuel = new Joueur(sc.nextLine()); 
+        Joueur Joueur_Courant = new Joueur(sc.nextLine()); 
+        Joueur_Actuel=Joueur_Courant; 
+        
+        //choix du niveau 
+        Scanner sc2 = new Scanner(System.in); 
+        System.out.println("Choix du niveau (facile, moyen ou difficile): "); 
+        String Choix_Niveau = sc2.nextLine( );
+        Niveau= Choix_Niveau; 
+        
     
 }
     
