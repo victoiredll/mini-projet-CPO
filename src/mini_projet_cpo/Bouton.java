@@ -10,5 +10,19 @@ package mini_projet_cpo;
  * @author margo
  */
 public class Bouton {
+    //creation des attributs du bouton 
+    String Couleur; 
     
+    //creation du constructeur 
+    public Bouton (String couleur){
+        Couleur=couleur; 
+    }
+    
+    //creation des methodes 
+    //Fonction présence du bouton 
+    //Fonction apparaitre 
+    //disparaitre
+    //changer de couleur au bout d'un certain temps 
+    //changer de place au bout d'un certain temps
+    //bouton où on doit cliquer plusieurs fois 
 }
