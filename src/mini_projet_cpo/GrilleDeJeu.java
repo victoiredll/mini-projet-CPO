@@ -21,8 +21,8 @@ public class GrilleDeJeu {
     
     //creation des methodes 
     
-    public void Initialiser_Grille(Partie bla){
-        if (bla.Niveau=="facile"){
+    public void Initialiser_Grille(Partie unePartie ){
+        if (unePartie.Niveau=="facile"){
             System.out.println ("cest bon"); 
             
         }
