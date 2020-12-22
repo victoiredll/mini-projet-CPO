@@ -13,6 +13,7 @@ public class GrilleDeJeu {
     //creation des attributs
     int Taille; 
     
+    
     //creation du constructeur 
     public GrilleDeJeu (int taille){
         Taille=taille; 
