@@ -38,6 +38,9 @@ public class GrilleDeJeu {
            if (Grille_Actuelle[i][j]=="Bou"){
                System.out.println("B"); 
            }
+           else {
+               System.out.println(" ");
+           }
        }
             
            
