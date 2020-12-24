@@ -15,6 +15,8 @@ public class GrilleDeJeu {
     //int Taille; 
     Random nbAleat = new Random();
     boolean Bouton = false; 
+    int j; 
+    int i; 
     //creation du constructeur 
     //public GrilleDeJeu (int taille){
        // Taille=taille; 
@@ -34,20 +36,48 @@ public class GrilleDeJeu {
            Grille_Actuelle[Ligne_Bouton][Colonne_Bouton]= "Bou"; 
         }
        for (int i=0; i<Grille_Actuelle.length; i++){
-           for (int j=0; j<Grille_Actuelle.length; j++) {
+           j=0; 
+           if (Grille_Actuelle[i][j]=="Bou"){
+               System.out.print("B"); 
+           }
+           else {
+               System.out.print(" ");
+           }
+           j=1; 
            if (Grille_Actuelle[i][j]=="Bou"){
                System.out.println("B"); 
            }
            else {
-               System.out.println(" ");
+               System.out.print(" ");
+           }
+           j=2; 
+           if (Grille_Actuelle[i][j]=="Bou"){
+               System.out.println("B"); 
+           }
+           else {
+               System.out.print(" ");
+           }
+           j=3; 
+           if (Grille_Actuelle[i][j]=="Bou"){
+               System.out.println("B"); 
+           }
+           else {
+               System.out.print(" ");
+           }
+           j=4; 
+           if (Grille_Actuelle[i][j]=="Bou"){
+               System.out.println("B"); 
+           }
+           else {
+               System.out.print(" ");
            }
        }
-            
+      
+               
            
-       }
-    }  
-    
-        
+           
+    }
+              
     public void Creer_Grille_Moyenne(){
         //Pour le niveau moyen il faudra cliquer sur 15 boutons 
         Cellule[][] Grille_Actuelle = new Cellule [6][6]; 
