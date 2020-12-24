@@ -32,9 +32,9 @@ public class Partie {
         Niveau= Choix_Niveau; 
         
         //On initialise suivant le niveau directement dans cette fonction 
+        //les boutons sont generes aleatoirement dans les fonctions 
         if (Niveau==1){
-            Grille_Actuelle.Creer_Grille_Facile();
-            
+            Grille_Actuelle.Creer_Grille_Facile();   
         }
         if (Niveau==2){
             Grille_Actuelle.Creer_Grille_Moyenne();
@@ -42,6 +42,7 @@ public class Partie {
         if (Niveau==3){
             Grille_Actuelle.Creer_Grille_Difficile();
         }
+        
     }
 }
     
