@@ -23,18 +23,28 @@ public class GrilleDeJeu {
     //creation des methodes 
     
     //on cree les grilles selon le choix et on génère les boutons 
-    
-    
+
+
     public void Creer_Grille_Facile(){
         //Pour le niveau facile, il faudra cliquer sur 10 boutons 
-       Cellule[][] Grille_Actuelle = new Cellule[5][5]; 
+       String[][] Grille_Actuelle = new String[5][5]; 
        for (int i=0; i<10; i++){
            int Ligne_Bouton = nbAleat.nextInt(5); 
            int Colonne_Bouton = nbAleat.nextInt(5); 
-           Grille_Actuelle.Afficher_Grille_Console(); //on affiche la grille pour commencer la partie 
+           Grille_Actuelle[Ligne_Bouton][Colonne_Bouton]= "Bou"; 
+        }
+       for (int i=0; i<Grille_Actuelle.length; i++){
+           for (int j=0; j<Grille_Actuelle.length; j++) {
+           if (Grille_Actuelle[i][j]=="Bou"){
+               System.out.println("B"); 
+           }
        }
-       
-    }
+            
+           
+       }
+    }  
+    
+        
     public void Creer_Grille_Moyenne(){
         //Pour le niveau moyen il faudra cliquer sur 15 boutons 
         Cellule[][] Grille_Actuelle = new Cellule [6][6]; 
@@ -44,10 +54,7 @@ public class GrilleDeJeu {
         Cellule[][] Grille_Actuelle = new Cellule [7][7]; 
     }
     
-    public void Afficher_Grille_Console(){
-        
-
-}
+   
 
 
 }

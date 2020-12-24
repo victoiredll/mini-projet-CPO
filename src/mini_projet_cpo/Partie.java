@@ -42,6 +42,9 @@ public class Partie {
         if (Niveau==3){
             Grille_Actuelle.Creer_Grille_Difficile();
         }
+        else {
+            System.out.println ("Erreur, veuillez rentrer un chiffre valide. "); 
+        }
         
     }
 }
