@@ -36,6 +36,12 @@ public class Partie {
             Grille_Actuelle.Creer_Grille_Facile();
             
         }
+        if (Niveau==2){
+            Grille_Actuelle.Creer_Grille_Moyenne();
+        }
+        if (Niveau==3){
+            Grille_Actuelle.Creer_Grille_Difficile();
+        }
     }
 }
     
