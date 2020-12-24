@@ -14,10 +14,11 @@ public class Partie {
     //creation des attributs 
     
     Joueur Joueur_Actuel; 
-    String Niveau; 
-     
+    GrilleDeJeu Grille_Actuelle = new GrilleDeJeu(); 
+    int Niveau; 
+    Partie Partie_Actuelle; 
     
-    public void Initialiser_Partie(Partie unePartie) {
+    public void Initialiser_Partie() {
         //il faudra vider la grille avant de commencer une nouvelle partie 
         Scanner sc= new Scanner(System.in); 
         System.out.println("Choix du pseudo du joueur: ");
@@ -26,11 +27,16 @@ public class Partie {
         
         //choix du niveau 
         Scanner sc2 = new Scanner(System.in); 
-        System.out.println("Choix du niveau (facile, moyen ou difficile): "); 
-        String Choix_Niveau = sc2.nextLine( );
+        System.out.println("Choix du niveau (facile 1, moyen 2 ou difficile 3): "); 
+        int Choix_Niveau = sc2.nextInt( );
         Niveau= Choix_Niveau; 
         
-        GrilleDeJeu.Grille_Actuelle.Initialiser_Grille(unePartie);
+        //On initialise suivant le niveau directement dans cette fonction 
+        if (Niveau==1){
+            Grille_Actuelle.Creer_Grille_Facile();
+            
+        }
+    }
 }
     
-}
+
