@@ -79,7 +79,7 @@ public class GrilleDeJeu {
     }
               
     public void Creer_Grille_Moyenne(){
-        //Pour le niveau moyen il faudra cliquer sur 15 boutons 
+        //Pour le niveau moyen il faudra cliquer sur 15 boutons. 
         Cellule[][] Grille_Actuelle = new Cellule [6][6]; 
     }
     public void Creer_Grille_Difficile(){
