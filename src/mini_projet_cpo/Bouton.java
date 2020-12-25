@@ -12,6 +12,7 @@ package mini_projet_cpo;
 public class Bouton {
     //creation des attributs du bouton 
     String Couleur; 
+    boolean Bouton=false; 
     
     //creation du constructeur 
     public Bouton (String couleur){
@@ -20,6 +21,10 @@ public class Bouton {
     
     //creation des methodes 
     //Fonction présence du bouton 
+    public boolean Presence_Bouton(GrilleDeJeu Creer_Grille){
+        
+        for ()
+    }
     //Fonction apparaitre 
     //disparaitre
     //changer de couleur au bout d'un certain temps 

@@ -5,6 +5,7 @@
  */
 package mini_projet_cpo;
 
+import java.util.Arrays;
 import java.util.Random;
 /**
  *
@@ -27,10 +28,13 @@ public class GrilleDeJeu {
     //on cree les grilles selon le choix et on génère les boutons 
 
 
-    public void Creer_Grille_Facile(){
+    public String Creer_Grille(Partie Initialiser_Partie){
         //Pour le niveau facile, il faudra cliquer sur 10 boutons 
         //Elle formera une grille de 6 lignes 
+         
+        if (Initialiser_Partie.Niveau==1){
        String[][] Grille_Actuelle = new String[5][5]; 
+       String[][] Grille_Finale = new String [5][5]; 
        for (int i=0; i<12; i++){
            int Ligne_Bouton = nbAleat.nextInt(5);  
            int Colonne_Bouton = nbAleat.nextInt(5); 
@@ -39,46 +43,45 @@ public class GrilleDeJeu {
        for (int i=0; i<Grille_Actuelle.length; i++){
            j=0; 
            if (Grille_Actuelle[i][j]=="Bou"){
-               System.out.print("B"); 
+               Grille_Finale[i][j]="B"; 
            }
            else {
-               System.out.print(" ");
+               Grille_Finale[i][j]=" ";
            }
            j=1; 
            if (Grille_Actuelle[i][j]=="Bou"){
-               System.out.println("B"); 
+               Grille_Finale[i][j]="B"; 
            }
            else {
-               System.out.print(" ");
+               Grille_Finale[i][j]=" ";
            }
            j=2; 
            if (Grille_Actuelle[i][j]=="Bou"){
-               System.out.println("B"); 
+               Grille_Finale[i][j]="B";
            }
            else {
-               System.out.print(" ");
+               Grille_Finale[i][j]=" ";
            }
            j=3; 
            if (Grille_Actuelle[i][j]=="Bou"){
-               System.out.println("B"); 
+               Grille_Finale[i][j]="B"; 
            }
            else {
-               System.out.print(" ");
+               Grille_Finale[i][j]=" ";
            }
            j=4; 
            if (Grille_Actuelle[i][j]=="Bou"){
-               System.out.println("B"); 
+               Grille_Finale[i][j]="B";
            }
            else {
-               System.out.print(" ");
+               Grille_Finale[i][j]=" ";
            }
-       }
-      
-               
            
-           
+       } 
+       return Grille_Finale[i][j]; 
+        } 
     }
-              
+    
     public void Creer_Grille_Moyenne(){
         //Pour le niveau moyen il faudra cliquer sur 15 boutons. 
         Cellule[][] Grille_Actuelle = new Cellule [6][6]; 
