@@ -79,19 +79,7 @@ public class GrilleDeJeu {
            
        } 
        return Grille_Finale[i][j]; 
-        } 
+        } //Faire pareil pour niveau 2 et 3 
     }
-    
-    public void Creer_Grille_Moyenne(){
-        //Pour le niveau moyen il faudra cliquer sur 15 boutons. 
-        Cellule[][] Grille_Actuelle = new Cellule [6][6]; 
-    }
-    public void Creer_Grille_Difficile(){
-        //Pour le niveau difficile il faudra cliquer sur 20 boutons 
-        Cellule[][] Grille_Actuelle = new Cellule [7][7]; 
-    }
-    
-   
-
-
+  //Creer fonction afficher grille 
 }
