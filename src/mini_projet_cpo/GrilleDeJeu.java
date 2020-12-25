@@ -14,7 +14,7 @@ public class GrilleDeJeu {
     //creation des attributs
     //int Taille; 
     Random nbAleat = new Random();
-    boolean Bouton = false; 
+    //boolean Bouton = false; 
     int j; 
     int i; 
     //creation du constructeur 
@@ -29,11 +29,12 @@ public class GrilleDeJeu {
 
     public void Creer_Grille_Facile(){
         //Pour le niveau facile, il faudra cliquer sur 10 boutons 
+        //Elle formera une grille de 6 lignes 
        String[][] Grille_Actuelle = new String[5][5]; 
-       for (int i=0; i<10; i++){
-           int Ligne_Bouton = nbAleat.nextInt(5); 
+       for (int i=0; i<12; i++){
+           int Ligne_Bouton = nbAleat.nextInt(5);  
            int Colonne_Bouton = nbAleat.nextInt(5); 
-           Grille_Actuelle[Ligne_Bouton][Colonne_Bouton]= "Bou"; 
+           Grille_Actuelle[Ligne_Bouton][Colonne_Bouton]= "Bou"; //Bou car bouton utilisé trop souvent 
         }
        for (int i=0; i<Grille_Actuelle.length; i++){
            j=0; 
