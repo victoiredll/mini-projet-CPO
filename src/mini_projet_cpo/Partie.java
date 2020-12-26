@@ -48,7 +48,11 @@ public class Partie {
         
         
     }
-  public void Chrono(){
+  public void Demarrer_Chrono(){
+      int heure=0; 
+      int minute=0;
+      int seconde=0; 
+      
       
   }  
 }
