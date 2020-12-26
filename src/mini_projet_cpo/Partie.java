@@ -33,11 +33,19 @@ public class Partie {
         
         //On initialise suivant le niveau directement dans cette fonction 
         //les boutons sont generes aleatoirement dans les fonctions 
-        Grille_Actuelle.Creer_Grille(Partie Partie_Actuelle); 
-        
+        if (Niveau==1){
+            Grille_Actuelle.Creer_Grille_Facile(); 
+        }
+        if (Niveau==2){
+            Grille_Actuelle.Creer_Grille_Moyenne(); 
+        }
+        if (Niveau==3){
+            Grille_Actuelle.Creer_Grille_Difficile(); 
+        }
         if ((Niveau!=1)&&(Niveau!=2)&&(Niveau!=3)) {
             System.out.println ("Erreur, veuillez rentrer un chiffre valide. "); 
         }
+        
         
     }
 }

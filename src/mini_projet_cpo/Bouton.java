@@ -12,7 +12,7 @@ package mini_projet_cpo;
 public class Bouton {
     //creation des attributs du bouton 
     String Couleur; 
-    boolean Bouton=false; 
+    boolean bouton; 
     
     //creation du constructeur 
     public Bouton (String couleur){
@@ -21,10 +21,23 @@ public class Bouton {
     
     //creation des methodes 
     //Fonction présence du bouton 
-    public boolean Presence_Bouton(GrilleDeJeu Creer_Grille){
-        
-        for ()
+    public boolean Presence_Bouton_Facile(GrilleDeJeu Creer_Grille_Facile){ //Verification de la présence du bouton
+      String Grille2 = GrilleDeJeu.Creer_Grille_Facile();  //recup une variable retournee 
+        for (int i=0; i<6; i++ ){
+            for (int j=0; j<6; j++){
+                if (Grille_Finale_Facile[i][j]=="B"){ // pourqioi il reconnait pas wesh 
+                    bouton=true; 
+                }
+                else{
+                    bouton=false; 
+                }
+            }
+        }
+            
+        return bouton;   //comment recup cette variable   
     }
+    
+    
     //Fonction apparaitre 
     //disparaitre
     //changer de couleur au bout d'un certain temps 
