@@ -79,7 +79,127 @@ public class GrilleDeJeu {
            
        } 
        return Grille_Finale[i][j]; 
-        } //Faire pareil pour niveau 2 et 3 
+        } 
+//pareil pour niveau 2
+        if (Initialiser_Partie.Niveau==2){
+            String[][] Grille_Actuelle = new String[6][6]; 
+            String[][] Grille_Finale = new String [6][6]; 
+            for (int i=0; i<12; i++){
+                int Ligne_Bouton = nbAleat.nextInt(5);  
+                int Colonne_Bouton = nbAleat.nextInt(5); 
+                Grille_Actuelle[Ligne_Bouton][Colonne_Bouton]= "Bou"; //Bou car bouton utilisé trop souvent 
+                }
+            for (int i=0; i<Grille_Actuelle.length; i++){
+                j=0; 
+                if (Grille_Actuelle[i][j]=="Bou"){
+                    Grille_Finale[i][j]="B"; 
+                }
+                else {
+                    Grille_Finale[i][j]=" ";
+                }
+                j=1; 
+                if (Grille_Actuelle[i][j]=="Bou"){
+                    Grille_Finale[i][j]="B"; 
+                }
+                else {
+                    Grille_Finale[i][j]=" ";
+                }
+                j=2; 
+                if (Grille_Actuelle[i][j]=="Bou"){
+                    Grille_Finale[i][j]="B";
+                }
+                else {
+                    Grille_Finale[i][j]=" ";
+                }
+                j=3; 
+                if (Grille_Actuelle[i][j]=="Bou"){
+                     Grille_Finale[i][j]="B"; 
+                 }
+                else {
+                     Grille_Finale[i][j]=" ";
+                }
+                j=4; 
+                if (Grille_Actuelle[i][j]=="Bou"){
+                     Grille_Finale[i][j]="B";
+                }
+                else {
+                    Grille_Finale[i][j]=" ";
+                }
+                j = 5;
+                if (Grille_Actuelle[i][j] == "Bou"){
+                    Grille_Finale[i][j]=="B"; //je comprends pas l'erreur la
+                }
+                else{ 
+                    Gille_Finale[i][j]==" ";
+                }
+           
+       } 
+        return Grille_Finale[i][j]; 
+        } 
+            //meme processus pour niveau 3
+            if (Initialiser_Partie.Niveau==3){
+            String[][] Grille_Actuelle = new String[7][7]; 
+            String[][] Grille_Finale = new String [7][7]; 
+            for (int i=0; i<12; i++){
+                int Ligne_Bouton = nbAleat.nextInt(5);  
+                int Colonne_Bouton = nbAleat.nextInt(5); 
+                Grille_Actuelle[Ligne_Bouton][Colonne_Bouton]= "Bou"; //Bou car bouton utilisé trop souvent 
+                }
+            for (int i=0; i<Grille_Actuelle.length; i++){
+            j=0; 
+            if (Grille_Actuelle[i][j]=="Bou"){
+               Grille_Finale[i][j]="B"; 
+            }
+            else {
+                Grille_Finale[i][j]=" ";
+            }
+            j=1; 
+            if (Grille_Actuelle[i][j]=="Bou"){
+                Grille_Finale[i][j]="B"; 
+            }
+            else {
+                Grille_Finale[i][j]=" ";
+            }
+            j=2; 
+            if (Grille_Actuelle[i][j]=="Bou"){
+                Grille_Finale[i][j]="B";
+            }
+            else {
+                Grille_Finale[i][j]=" ";
+            }
+            j=3; 
+            if (Grille_Actuelle[i][j]=="Bou"){
+                Grille_Finale[i][j]="B"; 
+            }
+            else {
+                Grille_Finale[i][j]=" ";
+            }
+            j=4; 
+            if (Grille_Actuelle[i][j]=="Bou"){
+                Grille_Finale[i][j]="B";
+            }
+            else {
+                Grille_Finale[i][j]=" ";
+            }
+            
+           j = 5;
+                if (Grille_Actuelle[i][j] == "Bou"){
+                    Grille_Finale[i][j]=="B"; //je comprends pas l'erreur la
+                }
+                else{ 
+                    Gille_Finale[i][j]==" ";
+                }
+            j = 6;
+                if (Grille_Actuelle[i][j] == "Bou"){
+                    Grille_Finale[i][j]=="B"; //je comprends pas l'erreur la
+                }
+                else{ 
+                    Gille_Finale[i][j]==" ";
+                }
+       } 
+       return Grille_Finale[i][j]; 
+        } 
+       
     }
   //Creer fonction afficher grille 
 }
