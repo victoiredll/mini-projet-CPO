@@ -19,9 +19,9 @@ public class GrilleDeJeu {
     int j; 
     int i; 
     //creation du constructeur 
-    //public GrilleDeJeu (int taille){
-       // Taille=taille; 
-    //}
+    public GrilleDeJeu (){
+         
+    }
     
     //creation des methodes 
     
@@ -200,11 +200,11 @@ public String Creer_Grille_Difficile(){
     } 
        
   //Creer fonction afficher grille 
-    public void Afficher_Grille_Facile(){
-        boolean Presence = Bouton.Presence_Bouton_Facile(); 
+    public void Afficher_Grille_Facile(Bouton Presence_Bouton_Facile){
+        boolean Presence = this.Bouton.Presence_Bouton_Facile(); 
         for (int i=0; i<6; i++){
             for (int j=0; j<6; j++){
-                if (bouton.Presence_Bouton_Facile==true){ //Comment la recuperer ? 
+                if (Presence==true){ //Comment la recuperer ? 
                     System.out.println("B");
                 }
                 else {

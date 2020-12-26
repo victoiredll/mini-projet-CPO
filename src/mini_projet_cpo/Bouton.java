@@ -15,8 +15,9 @@ public class Bouton {
     boolean bouton; 
     
     //creation du constructeur 
-    public Bouton (String couleur){
+    public Bouton (String couleur, boolean bouton1){ //normalement le constructeur cree des instances 
         Couleur=couleur; 
+        bouton = bouton1; //on instancie l'objet 
     }
     
     //creation des methodes 

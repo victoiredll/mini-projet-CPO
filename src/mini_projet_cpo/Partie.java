@@ -48,6 +48,9 @@ public class Partie {
         
         
     }
+  public void Chrono(){
+      
+  }  
 }
     
 
