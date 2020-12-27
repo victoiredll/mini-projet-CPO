@@ -10,6 +10,9 @@ package mini_projet_cpo;
  * @author margo
  */
 import java.util.Scanner;
+import java.util.Timer; 
+import java.util.TimerTask; 
+
 public class Partie {
     //creation des attributs 
     
@@ -48,10 +51,20 @@ public class Partie {
         
         
     }
+  public void Debuter_Partie(){
+      Initialiser_Partie(); 
+      Demarrer_Chrono(); 
+  }
+  
   public void Demarrer_Chrono(){
       int heure=0; 
       int minute=0;
       int seconde=0; 
+      int reccord; 
+      Timer Chronometre = new Timer(); 
+      Chronometre.schedule(new TimerTask(){
+          
+      }, heure, reccord);
       
       
   }  

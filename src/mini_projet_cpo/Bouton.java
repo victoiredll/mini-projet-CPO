@@ -9,6 +9,9 @@ package mini_projet_cpo;
  *
  * @author margo
  */
+import java.util.Timer; 
+import java.util.TimerTask; 
+
 public class Bouton {
     //creation des attributs du bouton 
     String Couleur; 
@@ -38,10 +41,31 @@ public class Bouton {
         return bouton;   //comment recup cette variable   
     }
     
+    //Fonction faire apparaitre nouveau bouton 
+    public void Apparaitre_Bouton(){
+        
+    }
+    //Fonction apparaitre au bout de 4 secondes si il n'a pas été cliqué 
+    //Trouver moyen pour qu'il apparaisse plus tot si cliqué 
     
-    //Fonction apparaitre 
+    public void Apparition_Temps(){
+        Timer ChronoApparition = new Timer(); 
+        int time = 40; //faire i-- pour que le jeu s'arrete au bout de 40 secondes 
+            while (time!=0){
+        ChronoApparition.schedule(new TimerTask(){
+            
+            Apparaitre_Bouton(); 
+            i--; 
+            }, 4000, 4000); //En ms donc correspond a 4s, recommence toutes les 4 secondes 
+            } 
+    }
+    Timer ChronoApparition = new Timer(); 
+    ChronoApparition.schedule
+    
+            
+            
     //disparaitre
     //changer de couleur au bout d'un certain temps 
     //changer de place au bout d'un certain temps
-    //bouton où on doit cliquer plusieurs fois 
+    //bouton où on doit cliquer plusieurs fois
 }
