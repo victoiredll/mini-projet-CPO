@@ -48,19 +48,20 @@ public class Bouton {
     //Fonction apparaitre au bout de 4 secondes si il n'a pas été cliqué 
     //Trouver moyen pour qu'il apparaisse plus tot si cliqué 
     
-    public void Apparition_Temps(){
+    //public void Apparition_Temps(){
         Timer ChronoApparition = new Timer(); 
         int time = 40; //faire i-- pour que le jeu s'arrete au bout de 40 secondes 
             while (time!=0){
-        ChronoApparition.schedule(new TimerTask(){
+        //ChronoApparition.schedule(new TimerTask(){
             
-            Apparaitre_Bouton(); 
-            i--; 
-            }, 4000, 4000); //En ms donc correspond a 4s, recommence toutes les 4 secondes 
-            } 
-    }
-    Timer ChronoApparition = new Timer(); 
-    ChronoApparition.schedule
+            //Apparaitre_Bouton(); 
+            //i--; 
+            //}, 4000, 4000); //En ms donc correspond a 4s, recommence toutes les 4 secondes 
+            //} 
+    
+    //Timer ChronoApparition = new Timer(); 
+    
+    
     
             
             
