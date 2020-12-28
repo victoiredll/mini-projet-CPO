@@ -16,7 +16,7 @@ public class Apparition_Chrono extends TimerTask { //creation de l'action à ré
     Bouton bouton; 
     @Override
     public void run(){ //action dans la boucle 
-        bouton.Allumer_Bouton(); 
+        bouton.Allumer_Bouton_Facile(); 
         
     }
     

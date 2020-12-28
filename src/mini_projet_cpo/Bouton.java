@@ -53,7 +53,7 @@ public class Bouton {
         return Bouton_Eteint; 
     }
     
-    public boolean Allumer_Bouton(){ //retourne true si un nouveau bouton est allumé 
+    public boolean Allumer_Bouton_Facile(){ //retourne true si un nouveau bouton est allumé 
         boolean bouton_allume=false; 
         if (bouton==true){ //des boutons sont encore présents dans le jeu 
             for (int i=0; i<Grille_Finale_Facile; i++){
