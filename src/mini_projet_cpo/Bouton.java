@@ -54,15 +54,15 @@ public class Bouton {
     }
     //Pourquoi pas generer une nouvelle grille a chaque clic 
     
-    public boolean Allumer_Bouton_Facile(){ //retourne true si un nouveau bouton est allumé 
+    public boolean Allumer_Bouton_Facile(GrilleDeJeu Grille_Finale_Facile){ //retourne true si un nouveau bouton est allumé 
         boolean bouton_allume=false; 
         if (bouton==true){ //des boutons sont encore présents dans le jeu 
-            for (int i=0; i<Grille_Finale_Facile; i++){
-                for (int j=0; j<Grille_Finale_Facile; j++){
-                while (Grille_Finale[i][j]!= "B"){
+            for (int i=0; i<6; i++){
+                for (int j=0; j<6; j++){
+                while (Grille_Finale_Facile[i][j]!= "B"){
                     bouton_allume = false; 
                 }
-                if (Grille_Finale[i][j]== "B"){
+                if (Grille_Finale_Facile[i][j]== "B"){ //Array ? 
                     bouton_allume = true; 
                 }
             }
