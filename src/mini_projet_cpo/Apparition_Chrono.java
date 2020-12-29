@@ -11,7 +11,7 @@ package mini_projet_cpo;
  */
 import java.util.TimerTask; 
 
-public class Apparition_Chrono extends TimerTask { //creation de l'action à répeter 
+public abstract class Apparition_Chrono extends TimerTask { //creation de l'action à répeter 
     //probleme d'abstraction 
     Bouton bouton; 
     int time=10; 

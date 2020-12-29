@@ -56,7 +56,7 @@ public class Partie {
       Demarrer_Chrono(); 
   }
   
-  public void Demarrer_Chrono(){
+  public void Demarrer_Chrono(){ //on fait un chrono ? 
       int heure=0; 
       int minute=0;
       int seconde=0; 
