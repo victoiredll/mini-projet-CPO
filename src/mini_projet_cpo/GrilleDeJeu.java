@@ -5,7 +5,7 @@
  */
 package mini_projet_cpo;
 
-import java.util.Arrays;
+
 import java.util.Random;
 /**
  *
@@ -201,7 +201,7 @@ public String Creer_Grille_Difficile(){
        
   //Creer fonction afficher grille 
     public void Afficher_Grille_Facile(Bouton Presence_Bouton_Facile){
-        boolean Presence = this.Bouton.Presence_Bouton_Facile(); 
+        boolean Presence = this.Bouton.Presence_Bouton_Facile(); //Recup variable ? 
         for (int i=0; i<6; i++){
             for (int j=0; j<6; j++){
                 if (Presence==true){ //Comment la recuperer ? 

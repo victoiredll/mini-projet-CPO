@@ -52,6 +52,7 @@ public class Bouton {
         Bouton_Eteint = true; 
         return Bouton_Eteint; 
     }
+    //Pourquoi pas generer une nouvelle grille a chaque clic 
     
     public boolean Allumer_Bouton_Facile(){ //retourne true si un nouveau bouton est allumé 
         boolean bouton_allume=false; 
@@ -70,15 +71,15 @@ public class Bouton {
         return bouton_allume; 
     }
     
-    public void Apparition_Bouton(){ //marche pas
+    public void Apparition_Bouton_Facile(){ //marche pas
+        //faire en sorte qu'il s'arrete au bout de 10 boutons 
         Timer Chrono_Apparition = new Timer(); 
-        Chrono_Apparition.schedule(new Apparition_Chrono() , 4000, 4000);         
+        Chrono_Apparition.schedule(new Apparition_Chrono() , 4000, 4000); //probleme d'abstraction         
         //Se repete toutes les 4 secondes 
         //Temps en ms donc correspond a 4s 
     
-            
-            
-    //disparaitre
+        //Si on a le temps 
+        
     //changer de couleur au bout d'un certain temps 
     //changer de place au bout d'un certain temps
     //bouton où on doit cliquer plusieurs fois
