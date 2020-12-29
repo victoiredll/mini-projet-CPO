@@ -17,14 +17,14 @@ public class Mini_projet_CPO {
     public static void main(String[] args) {
         // TODO code application logic here
         //classe joueur
-        // classe grille
+        //classe grille
         //class partie
         //class bouton
         
         // test du pseudo 
-        //Partie unePartie = new Partie(); 
-        //unePartie.Initialiser_Partie(); 
-        Apparition_Bouton(); 
+        Partie unePartie = new Partie(); 
+        unePartie.Debuter_Partie(); 
+        Apparition_Bouton_Facile(); 
     }
     
 }

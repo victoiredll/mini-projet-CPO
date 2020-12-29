@@ -20,7 +20,7 @@ public class Partie {
     GrilleDeJeu Grille_Actuelle = new GrilleDeJeu(); 
     int Niveau; 
     Partie Partie_Actuelle; 
-    
+            
     public void Initialiser_Partie() {
         //il faudra vider la grille avant de commencer une nouvelle partie 
         Scanner sc= new Scanner(System.in); 

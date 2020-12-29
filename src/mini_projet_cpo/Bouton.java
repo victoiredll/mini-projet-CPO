@@ -25,7 +25,7 @@ public class Bouton {
     
     //creation des methodes 
     //Fonction présence du bouton 
-    public boolean Presence_Bouton_Facile(GrilleDeJeu Creer_Grille_Facile){ //Verification de la présence du bouton
+    public boolean Presence_Bouton_Facile(){ //Verification de la présence du bouton
       String Grille2 = GrilleDeJeu.Creer_Grille_Facile();  //recup une variable retournee 
         for (int i=0; i<6; i++ ){
             for (int j=0; j<6; j++){
@@ -43,8 +43,9 @@ public class Bouton {
     
     //Fonction faire apparaitre nouveau bouton 
     
-    //Fonction apparaitre au bout de 4 secondes si il n'a pas été cliqué 
+    //Fonction apparaitre au bout de 4 secondes si il n'a pas été cliqué TimerTask
     //Trouver moyen pour qu'il apparaisse plus tot si cliqué 
+    
     public boolean Eteindre_Bouton(){
         //A utiliser pour la partie graphique correspond a cliquer
         //si le bouton est bien eteint on renvoie true 
@@ -59,7 +60,7 @@ public class Bouton {
         if (bouton==true){ //des boutons sont encore présents dans le jeu 
             for (int i=0; i<6; i++){
                 for (int j=0; j<6; j++){
-                while (Grille_Finale_Facile[i][j]!= "B"){
+                while (Grille_Finale_Facile[i][j]!= "B"){ //Array ? 
                     bouton_allume = false; 
                 }
                 if (Grille_Finale_Facile[i][j]== "B"){ //Array ? 
